@@ -113,3 +113,33 @@ input {
 	transform: rotateY(-180deg);
 	z-index: 3;
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .book {
+        width: 90%;
+        height: auto;
+    }
+    .page, .cover, .back-cover {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .page img {
+        border-radius: 0;
+    }
+    .front-page, .back-page {
+        padding: 0.5rem;
+    }
+    .next, .prev {
+        bottom: 0.5em;
+        font-size: 1.5rem;
+    }
+    .next {
+        right: 0.5em;
+    }
+    .prev {
+        left: 0.5em;
+    }
+}
+
